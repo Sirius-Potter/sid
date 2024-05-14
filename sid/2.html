@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question One</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/564x/d1/00/dd/d100dd733a43e3865f69032e0fb79ef6.jpg'); /* Background image */
+            background-size: cover;
+            color: #f0f0f0; /* Dark text color */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #f0f0f0; /* Dark heading color */
+        }
+
+        p {
+            color: #cccccc; /* Dark paragraph color */
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 300px;
+        }
+
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Let's play a game!</h1>
+        <p>It won't be hard. I promise!</p>
+        <p>What's your name?</p> 
+    </div>
+    <p>Hints and Rules:</p>
+    <ul>1. All Small Letters.</ul>
+    <ul>2. It is a name of 3 words.</ul>
+    <div class="container">
+        <input type="text" id="nameInput">
+        <button onclick="checkName()" class="button">Submit</button>
+    </div>
+
+
+ <!-- <h6>(if i'm Kizie Basu, you are? )</h6> -->  
+
+
+    <script>
+        function checkName() {
+            var name = document.getElementById("nameInput").value;
+            if (name.toLowerCase() === "immanuel rajkumar junior") {
+                window.location.href = "3.html"; // Redirect to the next page
+            } else {
+                alert("Try again buddy, you can do it.");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date, huh?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/564x/d1/00/dd/d100dd733a43e3865f69032e0fb79ef6.jpg'); /* Background image */
+            background-size: cover;
+            color: #f0f0f0; /* Dark text color */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #f0f0f0; /* Dark heading color */
+        }
+
+        p {
+            color: #cccccc; /* Dark paragraph color */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+
+        .grid-item {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 15px;
+            cursor: pointer;}
+
+        .grid-item:hover {
+            background-color: #45a049; /* Darker green */
+        }
+
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Well Done, Immanuel Rajkumar Junior!</h1>
+    </div>
+    <p></p>
+    <div class="container">
+        <p>How about guessing a date?</p>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item" onclick="checkDate(1)">1</div>
+        <div class="grid-item" onclick="checkDate(2)">2</div>
+        <div class="grid-item" onclick="checkDate(3)">3</div>
+        <div class="grid-item" onclick="checkDate(4)">4</div>
+        <div class="grid-item" onclick="checkDate(5)">5</div>
+        <div class="grid-item" onclick="checkDate(6)">6</div>
+        <div class="grid-item" onclick="checkDate(7)">7</div>
+        <div class="grid-item" onclick="checkDate(8)">8</div>
+        <div class="grid-item" onclick="checkDate(9)">9</div>
+        <div class="grid-item" onclick="checkDate(10)">10</div>
+        <div class="grid-item" onclick="checkDate(11)">11</div>
+        <div class="grid-item" onclick="checkDate(12)">12</div>
+        <div class="grid-item" onclick="checkDate(13)">13</div>
+        <div class="grid-item" onclick="checkDate(14)">14</div>
+        <div class="grid-item" onclick="checkDate(15)">15</div>
+        <div class="grid-item" onclick="checkDate(16)">16</div>
+        <div class="grid-item" onclick="checkDate(17)">17</div>
+        <div class="grid-item" onclick="checkDate(18)">18</div>
+        <div class="grid-item" onclick="checkDate(19)">19</div>
+        <div class="grid-item" onclick="checkDate(20)">20</div>
+        <div class="grid-item" onclick="checkDate(21)">21</div>
+        <div class="grid-item" onclick="checkDate(22)">22</div>
+        <div class="grid-item" onclick="checkDate(23)">23</div>
+        <div class="grid-item" onclick="checkDate(24)">24</div>
+        <div class="grid-item" onclick="checkDate(25)">25</div>
+        <div class="grid-item" onclick="checkDate(26)">26</div>
+        <div class="grid-item" onclick="checkDate(27)">27</div>
+        <div class="grid-item" onclick="checkDate(28)">28</div>
+        <div class="grid-item" onclick="checkDate(29)">29</div>
+        <div class="grid-item" onclick="checkDate(30)">30</div>
+        <div class="grid-item" onclick="checkDate(31)">31</div>
+    </div>
+
+    <script>
+        function checkDate(date) {
+            if (date === 21) {
+                window.location.href = "4.html"; // Redirect to the next page
+            } else {
+                alert("Try again buddy!");
+            }
+        }
+    </script>
+</body>
+</html>
